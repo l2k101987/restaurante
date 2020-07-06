@@ -1,0 +1,32 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-12">
+    <H2>Listado Mesas</H2>
+    <button class="btn btn-outline-primary">NUevo Registro</button>
+    <hr>
+    <table class="table table-responsive-sm table-striped">
+    <thead>
+    <tr>
+      <th>Detalle</th>
+      <th>Capacidad</th>
+      <th>Ubicacion</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mesa of mesas">
+        <td>{{mesa.detalle}}</td>
+        <td>{{mesa.capacidad}}</td>
+        <td>{{mesa.ubicacion}}</td>
+        <td>
+          <button class="btn btn-outline-success">Editar</button>
+          <button class="btn btn-outline-danger">Eliminar</button>
+        </td>
+
+      </tr>
+    </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
